@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
-  sonyprsnote2svg.xsl - extract SVG notes from Sony PRS reader data 
+  notepad2svg.xsl - extract SVG notes from Sony PRS T1 reader data 
   
   apply this to /media/READER/Sony_Reader/media/notepads/*.note files
 -->
@@ -11,7 +11,6 @@
 	xmlns:xml="http://www.w3.org/XML/1998/namespace">
 
 	<xsl:template match="/note:notepad">
-                <!-- TODO: multiple pages -->
 		<xsl:apply-templates select="//note:page[1]"/>
 	</xsl:template>
 
